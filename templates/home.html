@@ -1,0 +1,937 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>ZynCyber Tech Solution</title>
+    <meta
+      name="description"
+      content="Teckko – Modern IT Company showcasing services and solutions."
+    />
+    <meta
+      name="keywords"
+      content="it company, it services, technology, software"
+    />
+    <meta name="author" content="yourname" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/bootstrap.css' %}"
+    />
+    <!-- Other CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/animate.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/magnific-popup.min.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/odometer-theme-default.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'css/textanimation.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'icons/icomoon/style.css' %}"
+    />
+
+    <link rel="shortcut icon" href="{% static 'image/logo/favicon.png' %}" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="{% static 'image/logo/favicon.png' %}"
+    />
+  </head>
+
+  <body class="counter-scroll">
+    <div id="loading">
+      <div id="loading-center">
+        <div class="loader-container">
+          <div class="wrap-loader">
+            <div class="loader"></div>
+            <div class="icon">
+              <img
+                src="{% static 'image/logo/favicon.png' %}"
+                alt="Teckko Logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper position-relative">
+      <div class="top-bar">
+        <div
+          class="top-bar-inner flex align-items-center justify-content-between"
+        >
+          <div class="tf-tb-left">
+            <ul class="list-topbar-item flex align-items-center">
+              <li class="top-bar-item">
+                <i class="icon-location-dot"></i>
+                <a href="https://maps.google.com" target="_blank"
+                  >55 Main Street, San Francisco, USA</a
+                >
+              </li>
+              <li class="top-bar-item">
+                <i class="icon-email"></i>
+                <a href="mailto:info@teckko.com">info@teckko.com</a>
+              </li>
+              <li class="top-bar-item">
+                <i class="icon-phone"></i>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tf-tb-right flex align-items-center">
+            <ul class="list-support flex align-items-center">
+              <li class="support-item">
+                <a href="{% url 'teckko:home' %}#faq">Help</a>
+              </li>
+              <li class="support-item">
+                <a href="{% url 'teckko:home' %}#support">Support</a>
+              </li>
+              <li class="support-item">
+                <a href="{% url 'teckko:home' %}#faq">FAQs</a>
+              </li>
+            </ul>
+            <ul class="post-social">
+              <li>
+                <a href="https://facebook.com" class="icon-social"
+                  ><i class="icon-fb"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com" class="icon-social"
+                  ><i class="icon-X"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" class="icon-social"
+                  ><i class="icon-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://youtube.com" class="icon-social"
+                  ><i class="icon-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <header class="header header-sticky" id="header">
+        <div
+          class="header-content flex justify-content-between align-items-center"
+        >
+          <div class="header-left flex align-items-center">
+            <div class="logo logo-header">
+              <a href="{% url 'teckko:home' %}">
+                <img
+                  src="{% static 'image/logo/logo.svg' %}"
+                  alt="Teckko Logo"
+                />
+              </a>
+            </div>
+            <nav class="main-menu">
+              <ul class="menu-primary-menu">
+                <li class="menu-item current-menu-item">
+                  <a href="{% url 'teckko:home' %}" class="item-link body-2"
+                    ><span>Home</span></a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="{% url 'teckko:home' %}#about"
+                    class="item-link body-2"
+                    ><span>About Us</span></a
+                  >
+                </li>
+                <li class="menu-item menu-item-has-children position-relative">
+                  <a href="javascript:void(0)" class="item-link body-2"
+                    ><span>Portfolio</span></a
+                  >
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                      <a
+                        href="{% url 'teckko:home' %}#portfolio"
+                        class="item-link-2 body-2"
+                        >Portfolio Grid</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a
+                        href="{% url 'teckko:home' %}#portfolio"
+                        class="item-link-2 body-2"
+                        >Portfolio List</a
+                      >
+                    </li>
+                    <li class="sub-menu-item">
+                      <a
+                        href="{% url 'teckko:home' %}#portfolio"
+                        class="item-link-2 body-2"
+                        >Portfolio Details</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="{% url 'teckko:home' %}#services"
+                    class="item-link body-2"
+                    ><span>Services</span></a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="{% url 'teckko:home' %}#team"
+                    class="item-link body-2"
+                    ><span>Team</span></a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="{% url 'teckko:home' %}#contact"
+                    class="item-link body-2"
+                    ><span>Contact Us</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-right">
+            <div class="nav-btn">
+              <a href="{% url 'teckko:contact' %}" class="tf-btn">
+                <span>Get A Quote</span>
+                <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-title-home">
+        <div class="tf-container">
+          <div class="row">
+            <div class="col-12">
+              <div class="top-page-title">
+                <div class="sub-title body-2 fw-5 split-text effect-right">
+                  Welcome to Teckko Software
+                </div>
+                <h1 class="title fw-6 lh-85 split-text effect-right">
+                  NextGen Software Innovators
+                  <br /><span class="fw-3"
+                    >and
+                    <span class="highlight text-uppercase">Digital Soft</span>
+                    Solutions</span
+                  >
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between rg-70">
+            <div class="col-lg-4">
+              <div class="content-left">
+                <div class="desc text-animation">
+                  <p class="fs-20 lh-40">
+                    We specialize in delivering comprehensive software solutions
+                    tailored to meet the unique needs of businesses across
+                    various industries.
+                  </p>
+                </div>
+                <div
+                  class="wg-counter flex align-items-center justify-content-between"
+                >
+                  <div class="counter-item">
+                    <div class="counter">
+                      <div class="number-counter flex fs-65 fw-6">
+                        <span
+                          class="number odometer color-primary"
+                          data-to="5"
+                          data-inviewport="yes"
+                          >0</span
+                        >
+                        <span class="color-primary">k+</span>
+                      </div>
+                      <p class="title-counter body-2 lh-30">Happy Clients</p>
+                    </div>
+                  </div>
+                  <div class="counter-item">
+                    <div class="counter">
+                      <div class="number-counter flex fs-65 fw-6">
+                        <span
+                          class="number odometer color-primary"
+                          data-to="9"
+                          data-inviewport="yes"
+                          >0</span
+                        >
+                        <span class="color-primary">+</span>
+                      </div>
+                      <p class="title-counter body-2 lh-30">Years Experience</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="{% url 'teckko:home' %}#services" class="tf-btn">
+                  <span>Explore Our Services</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="image tf-animate-1">
+                <img
+                  src="{% static 'image/page-title/img-page-title.jpg' %}"
+                  alt="Teckko Team"
+                  class="lazyload"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <section class="section-about tf-spacing-2" id="about">
+          <div class="tf-container">
+            <div class="about-inner flex g-30">
+              <div class="left">
+                <div class="wg-curve-text">
+                  <div class="icon">
+                    <i class="icon-arrow-up"></i>
+                  </div>
+                  <div class="text-rotate">
+                    <svg
+                      width="270"
+                      height="270"
+                      viewBox="0 0 270 270"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <path
+                          id="textPathCircle"
+                          d="M 135,135 m -110,0 a 110,110 0 1,1 220,0 a 110,110 0 1,1 -220,0"
+                          fill="none"
+                        />
+                      </defs>
+                      <text>
+                        <textPath
+                          href="#textPathCircle"
+                          startOffset="0"
+                          textLength="690"
+                          lengthAdjust="spacing"
+                        >
+                          - Digital - Software - Solutions - Agency
+                        </textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="heading-section mb-30">
+                  <div class="sub-title body-2 fw-7 mb-17 title-animation">
+                    We Are Teckko Company
+                  </div>
+                  <h2 class="title fw-6 title-animation">
+                    Innovate Soft Solutions to
+                    <span class="fw-3">Grow Tech Business</span>
+                  </h2>
+                </div>
+                <div class="section-content">
+                  <div class="desc mb-40 text-animation">
+                    <p class="lh-30">
+                      With a portfolio of successful projects spanning various
+                      industries, our team has consistently demonstrated the
+                      ability to transform ideas into high-performing,
+                      user-friendly applications.
+                    </p>
+                  </div>
+                  <div class="title-animation">
+                    <a
+                      href="{% url 'teckko:home' %}#about"
+                      class="tf-btn no-bg text-underline"
+                    >
+                      <span>Learn More Us</span>
+                      <i class="icon-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-counting tf-spacing-2">
+          <div class="tf-container w-1810">
+            <div class="section-counting-inner flex">
+              <div class="left">
+                <div class="image tf-animate-1">
+                  <img
+                    src="{% static 'image/section/img-section-counting-1.jpg' %}"
+                    alt="Teckko Office"
+                    class="lazyload"
+                  />
+                </div>
+              </div>
+              <div class="right">
+                <div class="heading-section mb-60">
+                  <div class="sub-title body-2 fw-7 mb-17 title-animation">
+                    Explore Our Achievement
+                  </div>
+                  <h2 class="title fw-6 title-animation">
+                    Premier Tech Innovations
+                    <span class="fw-3">Teckko Software Agency</span>
+                  </h2>
+                </div>
+                <div class="wg-counter flex g-30">
+                  <div class="counter-item style-2 style-bg-primary px-md-15">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <div class="counter">
+                      <div class="number-counter flex fs-65 fw-7">
+                        <span
+                          class="number odometer"
+                          data-to="36"
+                          data-inviewport="yes"
+                          >0</span
+                        >
+                        <span class="title-counter">k+</span>
+                      </div>
+                      <h6 class="title-counter lh-30 fw-5">
+                        Trusted Global Clients
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="counter-item style-2 style-bg-surface px-md-15">
+                    <div class="icon">
+                      <i class="icon-check"></i>
+                    </div>
+                    <div class="counter">
+                      <div class="number-counter flex fs-65 fw-7">
+                        <span
+                          class="number odometer"
+                          data-to="850"
+                          data-inviewport="yes"
+                          >0</span
+                        >
+                        <span class="title-counter">+</span>
+                      </div>
+                      <h6 class="title-counter lh-30 fw-5">
+                        Best Project Complete
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-company tf-spacing-3">
+          <div class="tf-container w-1810">
+            <div class="section-company-inner">
+              <div class="left-section">
+                <div class="heading-section mb-53">
+                  <div class="sub-title body-2 fw-7 mb-17 title-animation">
+                    Grow & Development
+                  </div>
+                  <h2 class="title fw-6 title-animation">
+                    Modern Technology and
+                    <span class="fw-3">Advancement Incentives</span>
+                  </h2>
+                </div>
+                <div class="wg-according" id="According1">
+                  <div class="according-item">
+                    <h5 class="fw-5">
+                      <a
+                        href="#according1"
+                        data-bs-toggle="collapse"
+                        class="title-according"
+                        >Learn Our Company Mission<span></span
+                      ></a>
+                    </h5>
+                    <div
+                      id="according1"
+                      class="collapse show"
+                      data-bs-parent="#According1"
+                    >
+                      <div class="according-content">
+                        <div class="image left">
+                          <img
+                            src="{% static 'image/section/img-according-1.jpg' %}"
+                            alt="Mission Image"
+                            class="lazyload"
+                          />
+                        </div>
+                        <div class="right">
+                          <div class="desc lh-30">
+                            Our mission is to revolutionize the digital
+                            landscape by delivering innovative software
+                            solutions to empower businesses.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="according-item">
+                    <h5 class="fw-5">
+                      <a
+                        href="#according2"
+                        data-bs-toggle="collapse"
+                        class="title-according collapsed"
+                        >Our Company Vision<span></span
+                      ></a>
+                    </h5>
+                    <div
+                      id="according2"
+                      class="collapse"
+                      data-bs-parent="#According1"
+                    >
+                      <div class="according-content">
+                        <div class="image left">
+                          <img
+                            src="{% static 'image/section/img-according-1.jpg' %}"
+                            alt="Vision Image"
+                            class="lazyload"
+                          />
+                        </div>
+                        <div class="right">
+                          <div class="desc lh-30">
+                            Our vision is to lead the tech industry with
+                            cutting-edge solutions and sustainable growth
+                            strategies.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add more accordion items as needed -->
+                </div>
+              </div>
+              <div class="right-section">
+                <div class="image image-section tf-animate-1">
+                  <img
+                    src="{% static 'image/section/img-section-company.jpg' %}"
+                    alt="Company Team"
+                    class="lazyload"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-services tf-spacing-2" id="services">
+          <div class="tf-container">
+            <div class="row">
+              <div class="col-12">
+                <div class="heading-section mb-60 text-center">
+                  <div class="sub-title body-2 fw-7 mb-17 title-animation">
+                    Our Popular Services
+                  </div>
+                  <h2 class="title fw-6 title-animation">
+                    We Run All kinds Of IT Services
+                    <br /><span class="fw-3">that vow Your Success</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="swiper tf-swiper sw-services sw-border"
+                  data-swiper='{"slidesPerView": 1, "spaceBetween": 0, "speed": 800, "pagination": {"el": ".sw-pagination-services", "clickable": true}, "breakpoints": {"550": {"slidesPerView": 2, "slidesPerGroup": 1}, "1200": {"slidesPerView": 3, "slidesPerGroup": 1}}}'
+                >
+                  <div class="swiper-wrapper">
+                    {% for service in services %}
+                    <div class="swiper-slide">
+                      <div class="services-item hover-image px-md-15 style-1">
+                        <div class="icon">
+                          <i class="{{ service.icon }}"></i>
+                        </div>
+                        <h6 class="lh-30 fw-6">
+                          <a
+                            href="{% url 'teckko:home' %}#service-{{ service.id }}"
+                            class="title-service"
+                          >
+                            {{ service.title }}
+                          </a>
+                        </h6>
+                        <div class="desc lh-30">
+                          {{ service.description|truncatewords:10 }}
+                        </div>
+                        <a
+                          href="{% url 'teckko:home' %}#service-{{ service.id }}"
+                          class="image"
+                        >
+                          <img
+                            src="{{ service.image.url }}"
+                            alt="{{ service.title }}"
+                            class="lazyload"
+                          />
+                        </a>
+                        <div class="bottom-item">
+                          <a
+                            href="{% url 'teckko:home' %}#service-{{ service.id }}"
+                            class="tf-btn-readmore"
+                          >
+                            <span class="plus">+</span>
+                            <span class="text">Read More</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div
+                  class="sw-pagination-services sw-pagination d-xl-none mt-15 justify-content-center"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-team tf-spacing-2" id="team">
+          <div class="tf-container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="heading-section">
+                  <div class="sub-title body-2 fw-7 mb-17 title-animation">
+                    Our Professionals
+                  </div>
+                  <h2 class="title fw-6 mb-60 title-animation">
+                    Meet Our Experience
+                    <span class="fw-3">Members</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div
+                  class="swiper tf-swiper sw-team sw-border"
+                  data-swiper='{"slidesPerView": 1, "spaceBetween": 30, "speed": 800, "pagination": {"el": ".sw-pagination-team", "clickable": true}, "navigation": {"clickable": true, "nextEl": ".team-next", "prevEl": ".team-prev"}, "breakpoints": {"450": {"slidesPerView": 2, "slidesPerGroup": 2}, "1200": {"slidesPerView": 3, "slidesPerGroup": 1}}}'
+                >
+                  <div class="swiper-wrapper">
+                    {% for member in team_members %}
+                    <div class="swiper-slide">
+                      <div class="team-item hover-image">
+                        <div class="top-item">
+                          <a
+                            href="{% url 'teckko:home' %}#team-{{ member.id }}"
+                            class="image"
+                          >
+                            <img
+                              src="{{ member.image.url }}"
+                              alt="{{ member.name }}"
+                              class="lazyload"
+                            />
+                          </a>
+                          <div class="social-item">
+                            <ul class="post-social">
+                              {% if member.facebook %}
+                              <li>
+                                <a
+                                  href="{{ member.facebook }}"
+                                  class="icon-social"
+                                  ><i class="icon-fb"></i
+                                ></a>
+                              </li>
+                              {% endif %} {% if member.twitter %}
+                              <li>
+                                <a
+                                  href="{{ member.twitter }}"
+                                  class="icon-social"
+                                  ><i class="icon-X"></i
+                                ></a>
+                              </li>
+                              {% endif %} {% if member.linkedin %}
+                              <li>
+                                <a
+                                  href="{{ member.linkedin }}"
+                                  class="icon-social"
+                                  ><i class="icon-linkedin"></i
+                                ></a>
+                              </li>
+                              {% endif %} {% if member.youtube %}
+                              <li>
+                                <a
+                                  href="{{ member.youtube }}"
+                                  class="icon-social"
+                                  ><i class="icon-youtube"></i
+                                ></a>
+                              </li>
+                              {% endif %}
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="item-content">
+                          <h6 class="title">
+                            <a
+                              href="{% url 'teckko:home' %}#team-{{ member.id }}"
+                              >{{ member.name }}</a
+                            >
+                          </h6>
+                          <p class="sub-title">{{ member.role }}</p>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div
+                  class="sw-pagination-team sw-pagination d-lg-none mt-15 justify-content-center"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-testimonial tf-spacing-2">
+          <div class="tf-container">
+            <div class="row justify-content-between rg-50">
+              <div class="col-lg-7">
+                <div class="heading-section mb-60">
+                  <div class="sub-title body-2 fw-7 mb-17 title-animation">
+                    Clients Feedback
+                  </div>
+                  <h2 class="title fw-6 title-animation">
+                    1250+ People Say
+                    <span class="fw-3">About Us</span>
+                  </h2>
+                </div>
+                <div
+                  class="swiper tf-swiper sw-testimonial"
+                  data-swiper='{"slidesPerView": 1, "spaceBetween": 30, "speed": 1000, "pagination": {"el": ".sw-pagination-testimonial", "clickable": true}}'
+                >
+                  <div class="swiper-wrapper">
+                    {% for testimonial in testimonials %}
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="icon">
+                          <i class="icon-quote2"></i>
+                        </div>
+                        <div class="text fs-27 lh-35 fw-5">
+                          {{ testimonial.quote }}
+                        </div>
+                        <div class="user-testimonial">
+                          <a href="#" class="name-user body-2"
+                            >{{ testimonial.name }}</a
+                          >
+                          <a href="#" class="position text-medium"
+                            >{{ testimonial.position }}</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div
+                  class="sw-pagination-testimonial sw-pagination mt-50"
+                ></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="list-image">
+                  <div class="img-section img-1 img-elip tf-animate-1">
+                    <img
+                      src="{% static 'image/section/section-testimonial-1.jpg' %}"
+                      alt="Testimonial Image 1"
+                      class="lazyload"
+                    />
+                  </div>
+                  <div class="img-section img-2 tf-animate-2">
+                    <img
+                      src="{% static 'image/section/section-testimonial-2.jpg' %}"
+                      alt="Testimonial Image 2"
+                      class="lazyload"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-form tf-spacing-4" id="contact">
+          <div class="section-inner flex">
+            <div class="left">
+              <div class="image tf-animate-1">
+                <img
+                  src="{% static 'image/section/img-section-form-1.jpg' %}"
+                  alt="Contact Image"
+                  class="lazyload"
+                />
+              </div>
+              <div class="section-content section-form-content tf-animate-2">
+                <div class="sub-title body-2 fw-7 mb-17">Work Inquiry</div>
+                <h2 class="title fw-6">Let’s Work For your Next Projects ?</h2>
+                <a
+                  href="{% url 'teckko:contact' %}"
+                  class="tf-btn style-bg-white hover-bg-main-dark"
+                >
+                  <span>Contact Us</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="right">
+              <form
+                id="contactform"
+                class="form-contact-us px-md-15"
+                method="post"
+                action="{% url 'teckko:contact' %}"
+              >
+                {% csrf_token %}
+                <div class="heading-form text-center">
+                  <h3 class="title">Need Help For Project!</h3>
+                  <div class="desc lh-30">
+                    We are ready to help your next projects, let’s work together
+                  </div>
+                </div>
+                <div class="cols mb-20 g-20">
+                  <fieldset class="item">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Name"
+                      required
+                    />
+                    <i class="icon-user"></i>
+                  </fieldset>
+                  <fieldset class="item">
+                    <input
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      placeholder="Email"
+                      required
+                    />
+                    <i class="icon-email"></i>
+                  </fieldset>
+                </div>
+                <div class="nice-select mb-20">
+                  <span class="current caption-1">Choose Services</span>
+                  <ul class="list">
+                    <li class="option option-all selected focus">
+                      Choose Services
+                    </li>
+                    <li class="option">Machine Learning</li>
+                    <li class="option">Artificial Intelligence</li>
+                    <li class="option">Augmented Reality</li>
+                    <li class="option">Software Development</li>
+                  </ul>
+                </div>
+                <fieldset class="mb-20">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </fieldset>
+                <button type="submit" class="tf-btn mx-auto">
+                  <span>Send Message Us</span>
+                  <i class="icon-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer" id="footer">
+        <div class="tf-container">
+          <div class="footer-middle flex justify-content-between">
+            <div class="left">
+              <form class="form-newsletter form-footer">
+                <div class="title fs-32 fw-7">
+                  Subscribe <span class="fw-4">Newsletter</span>
+                </div>
+                <fieldset class="flex g-15 mb-23 input-form">
+                  <fieldset class="input-icon-absolute">
+                    <i class="icon-email"></i>
+                    <input type="text" placeholder="Email Address" required />
+                  </fieldset>
+                  <button
+                    type="submit"
+                    class="tf-btn hover-bg-white flex-grow-1"
+                  >
+                    <span>Sign Up</span>
+                    <i class="icon-arrow-right"></i>
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="locations-contact">
+              <div class="locations-footer item mb-30">
+                <div class="title body-2 fw-5">Locations</div>
+                <div class="address body-2 lh-30">
+                  55 Main Street, San Francisco, USA
+                </div>
+              </div>
+              <div class="contact-footer item">
+                <div class="title body-2 fw-5">Contact</div>
+                <h6>
+                  <a href="mailto:info@teckko.com" class="fw-5"
+                    >info@teckko.com</a
+                  >
+                </h6>
+                <h4 class="lh-45 fw-6">
+                  <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div
+              class="list-bottom flex align-items-center justify-content-between flex-wrap rg-15 g-30"
+            >
+              <span class="text-center lh-30">
+                © 2025
+                <a href="{% url 'teckko:home' %}" class="fw-7">Teckko</a> - IT
+                Services. All rights reserved.
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- JavaScript -->
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+      <script src="{% static 'js/lazysize.min.js' %}"></script>
+      <script src="{% static 'js/magnific-popup.min.js' %}"></script>
+      <script src="{% static 'js/gsap.min.js' %}"></script>
+      <script src="{% static 'js/ScrollTrigger.min.js' %}"></script>
+      <script src="{% static 'js/Splitetext.js' %}"></script>
+      <script src="{% static 'js/wow.min.js' %}"></script>
+      <script src="{% static 'js/ScrollSmooth.js' %}"></script>
+      <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+      <script src="{% static 'js/carousel.js' %}"></script>
+      <script src="{% static 'js/odometer.min.js' %}"></script>
+      <script src="{% static 'js/jquery-validate.js' %}"></script>
+      <script src="{% static 'js/textanimation.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    </div>
+  </body>
+</html>
