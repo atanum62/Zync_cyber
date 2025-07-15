@@ -1,1 +1,659 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% load i18n static %} {# static optional, but handy
+for images #} {% load static %} {% block content %}
+<div class="wrapper position-relative overflow-x-clip">
+  <!-- Page-title -->
+  <div class="page-title">
+    <div class="tf-container">
+      <div class="page-title-content text-center">
+        <h1 class="title split-text effect-right">About&nbsp;Us</h1>
+
+        <div class="breadkcum">
+          {# use Django’s {% url %} instead of a hard‑coded file name #}
+          <a
+            href="{% url 'index' %}"
+            class="link-breadkcum body-2 fw-7 split-text effect-right"
+          >
+            Home
+          </a>
+          <span class="dot"></span>
+          <a
+            href="{% url 'about' %}"
+            class="page-breadkcum body-2 fw-7 split-text effect-right"
+          >
+            About&nbsp;Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.page-title -->
+
+  <!-- Main-content -->
+  <div class="main-content">
+    {% load static %}
+
+    <section class="section-counting tf-spacing-5">
+      <div class="tf-container w-1810">
+        <div class="section-counting-inner flex">
+          <!-- ========== LEFT SIDE ============ -->
+          <div class="left">
+            <div class="image tf-animate-1">
+              <img
+                src="{% static 'image/section/img-section-about-p-serveic-2.jpg' %}"
+                data-src="{% static 'image/section/img-section-about-p-serveic-2.jpg' %}"
+                alt=""
+                class="lazyload"
+              />
+            </div>
+
+            <div class="box-avatar tf-animate-3">
+              <div class="text">
+                <p class="fs-20 fw-6">5m+ Trusted<br />Global Clients</p>
+                <img
+                  src="{% static 'image/icon/icon-box-avatar.png' %}"
+                  data-src="{% static 'image/icon/icon-box-avatar.png' %}"
+                  class="lazyload"
+                  alt=""
+                />
+              </div>
+
+              <div class="list-agent">
+                <div class="agent agent-1">
+                  <img
+                    src="{% static 'image/avatar/agent-1.jpg' %}"
+                    data-src="{% static 'image/avatar/agent-1.jpg' %}"
+                    class="lazyload"
+                    alt=""
+                  />
+                </div>
+                <div class="agent agent-2">
+                  <img
+                    src="{% static 'image/avatar/agent-2.jpg' %}"
+                    data-src="{% static 'image/avatar/agent-2.jpg' %}"
+                    class="lazyload"
+                    alt=""
+                  />
+                </div>
+                <div class="agent agent-3">
+                  <img
+                    src="{% static 'image/avatar/agent-3.jpg' %}"
+                    data-src="{% static 'image/avatar/agent-3.jpg' %}"
+                    class="lazyload"
+                    alt=""
+                  />
+                </div>
+                <div class="agent agent-plus"><span>+</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========== RIGHT SIDE ============ -->
+          <div class="right">
+            <div class="heading-section mb-60">
+              <div class="sub-title body-2 fw-7 mb-17 title-animation">
+                Explore Our Achievement
+              </div>
+              <h2 class="title fw-6 title-animation">
+                Premier Tech Innovations<br />
+                <span class="fw-3">Vertex Software Agency</span>
+              </h2>
+            </div>
+
+            <div class="wg-counter flex g-30">
+              <div class="counter-item style-2 style-bg-primary px-md-15">
+                <div class="icon"><i class="icon-check"></i></div>
+                <div class="counter">
+                  <div class="number-counter flex fs-65 fw-7">
+                    <span
+                      class="number odometer"
+                      data-to="36"
+                      data-inviewport="yes"
+                      >0</span
+                    >
+                    <span class="title-counter">k+</span>
+                  </div>
+                  <h6 class="title-counter lh-30 fw-5">
+                    Trusted Global Clients
+                  </h6>
+                </div>
+              </div>
+
+              <div class="counter-item style-2 style-bg-surface px-md-15">
+                <div class="icon"><i class="icon-check"></i></div>
+                <div class="counter">
+                  <div class="number-counter flex fs-65 fw-7">
+                    <span
+                      class="number odometer"
+                      data-to="850"
+                      data-inviewport="yes"
+                      >0</span
+                    >
+                    <span class="title-counter">+</span>
+                  </div>
+                  <h6 class="title-counter lh-30 fw-5">
+                    Best Project Complete
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% load static %}
+
+    <section class="section-about tf-spacing-6">
+      <!-- ========= Moving marquee text ========= -->
+      <div class="about-top">
+        <div class="tf-marquee">
+          <div class="marquee-wrapper">
+            <div class="initial-child-container">
+              {% for _ in "xxxxxxxxxxxxxxxxxxxxxxxx" %} {# 24× for demo #}
+              <div class="big-text">Software Development</div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========= Two‑column “about” layout ========= -->
+      <div class="tf-container">
+        <div class="about-inner flex g-30">
+          <!-- ---------- Left: circular text & arrow icon ---------- -->
+          <div class="left">
+            <div class="wg-curve-text">
+              <div class="icon"><i class="icon-arrow-up"></i></div>
+
+              <div class="text-rotate">
+                <svg
+                  width="250"
+                  height="250"
+                  viewBox="0 0 250 250"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <path
+                      id="textPathCircle"
+                      d="M 125,125 m -110,0 a 110,110 0 1,1 220,0 a 110,110 0 1,1 -220,0"
+                      fill="none"
+                    />
+                  </defs>
+                  <text>
+                    <textPath
+                      href="#textPathCircle"
+                      startOffset="0"
+                      textLength="691"
+                      lengthAdjust="spacing"
+                    >
+                      - Digital - Software - Solutions - Agency&nbsp;
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------- Right: heading, paragraph, CTA ---------- -->
+          <div class="right">
+            <div class="heading-section mb-30">
+              <div class="sub-title body-2 fw-7 mb-17 title-animation">
+                We Are ZynCyber Tech Solution Company
+              </div>
+
+              <h2 class="title fw-6 title-animation">
+                Innovate Soft Solutions to<br />
+                <span class="fw-3">Grow Tech Business</span>
+              </h2>
+            </div>
+
+            <div class="section-content">
+              <div class="desc mb-40 text-animation">
+                <p class="lh-30">
+                  With a portfolio of successful projects spanning various
+                  industries, our team has consistently demonstrated the ability
+                  to transform ideas into high‑performing, user‑friendly
+                  applications.
+                </p>
+              </div>
+
+              <div class="title-animation">
+                <a href="{% url 'about' %}" class="tf-btn no-bg text-underline">
+                  <span>Learn More Us</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% comment %} {% endcomment %}
+    <section class="section-project p-about tf-spacing-2">
+      <div class="mask mask-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="800"
+          height="800"
+          fill="none"
+        >
+          <circle
+            cx="400"
+            cy="400"
+            r="325"
+            stroke="url(#a1)"
+            stroke-width="150"
+          ></circle>
+          <defs>
+            <linearGradient id="a1" x1="176" x2="569" y1="70.5" y2="674">
+              <stop offset="0" stop-color="#fff" stop-opacity="0.05"></stop>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="tf-container">
+        <div class="heading-section mb-60 text-center">
+          <div class="sub-title body-2 fw-7 mb-17 title-animation">
+            Our Case Studies
+          </div>
+          <h2 class="title fw-6 title-animation">
+            Explore Our
+            <span class="fw-3">Recent Case Studies</span>
+          </h2>
+        </div>
+      </div>
+      <div
+        class="swiper tf-swiper sw-project swiper-initialized swiper-horizontal swiper-backface-hidden"
+        data-swiper='{
+            "slidesPerView": 1,
+            "spaceBetween": 30,
+            "speed": 800,
+            "pagination": { "el": ".sw-pagination-project", "clickable": true },
+            "navigation": {
+                "clickable": true,
+                "nextEl": ".team-project",
+                "prevEl": ".team-project"
+            },  
+            "breakpoints": {
+                "1200": { "slidesPerView": 1.4125, "slidesPerGroup": 1}
+                }
+            }'
+      >
+        <div
+          class="swiper-wrapper"
+          id="swiper-wrapper-944fcfad75b27ef2"
+          aria-live="polite"
+        >
+          <div
+            class="swiper-slide swiper-slide-active"
+            role="group"
+            aria-label="1 / 4"
+            style="width: 1152.3px; margin-right: 30px"
+          >
+            <div class="project-item hover-image">
+              <div class="item-content px-sm-15">
+                <div class="top-content">
+                  <div class="sub-title body-2 fw-7">Software Development</div>
+                  <h3 class="title-project">
+                    <a href="porfolio-details.html"
+                      >Mobile Application Design</a
+                    >
+                  </h3>
+                  <div class="desc lh-30">
+                    Every great story starts with a simple idea. We're here to
+                    bring yours to life — clearly, beautifully, and with impact.
+                  </div>
+                </div>
+                <div class="bottom-content">
+                  <a href="porfolio-details.html" class="tf-btn-readmore">
+                    <span class="plus">+</span>
+                    <span class="text">Read More</span>
+                  </a>
+                </div>
+              </div>
+              <a href="porfolio-details.html" class="image">
+                <img
+                  src="{% static 'image/project-item/project-item-1.jpg' %}"
+                  data-src="{% static 'image/project-item/project-item-1.jpg' %}"
+                  alt=""
+                  class="ls-is-cached lazyloaded"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide swiper-slide-next"
+            role="group"
+            aria-label="2 / 4"
+            style="width: 1152.3px; margin-right: 30px"
+          >
+            <div class="project-item hover-image">
+              <div class="item-content px-sm-15">
+                <div class="top-content">
+                  <div class="sub-title body-2 fw-7">Software Development</div>
+                  <h3 class="title-project">
+                    <a href="porfolio-details.html">UI/UX Design</a>
+                  </h3>
+                  <div class="desc lh-30">
+                    Every great story starts with a simple idea. We're here to
+                    bring yours to life — clearly, beautifully, and with impact.
+                  </div>
+                </div>
+                <div class="bottom-content">
+                  <a href="porfolio-details.html" class="tf-btn-readmore">
+                    <span class="plus">+</span>
+                    <span class="text">Read More</span>
+                  </a>
+                </div>
+              </div>
+              <a href="porfolio-details.html" class="image">
+                <img
+                  src="{% static 'image/project-item/project-item-1.jpg' %}"
+                  data-src="{% static 'image/project-item/project-item-1.jpg' %}"
+                  alt=""
+                  class="ls-is-cached lazyloaded"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            role="group"
+            aria-label="3 / 4"
+            style="width: 1152.3px; margin-right: 30px"
+          >
+            <div class="project-item hover-image">
+              <div class="item-content px-sm-15">
+                <div class="top-content">
+                  <div class="sub-title body-2 fw-7">Software Development</div>
+                  <h3 class="title-project">
+                    <a href="porfolio-details.html"
+                      >Mobile Application Design</a
+                    >
+                  </h3>
+                  <div class="desc lh-30">
+                    Every great story starts with a simple idea. We're here to
+                    bring yours to life — clearly, beautifully, and with impact.
+                  </div>
+                </div>
+                <div class="bottom-content">
+                  <a href="porfolio-details.html" class="tf-btn-readmore">
+                    <span class="plus">+</span>
+                    <span class="text">Read More</span>
+                  </a>
+                </div>
+              </div>
+              <a href="porfolio-details.html" class="image">
+                <img
+                  src="{% static 'image/project-item/project-item-1.jpg' %}"
+                  data-src="{% static 'image/project-item/project-item-1.jpg' %}"
+                  alt=""
+                  class="lazyload"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            role="group"
+            aria-label="4 / 4"
+            style="width: 1152.3px; margin-right: 30px"
+          >
+            <div class="project-item hover-image">
+              <div class="item-content px-sm-15">
+                <div class="top-content">
+                  <div class="sub-title body-2 fw-7">Software Development</div>
+                  <h3 class="title-project">
+                    <a href="porfolio-details.html">UI/UX Design</a>
+                  </h3>
+                  <div class="desc lh-30">
+                    Every great story starts with a simple idea. We're here to
+                    bring yours to life — clearly, beautifully, and with impact.
+                  </div>
+                </div>
+                <div class="bottom-content">
+                  <a href="porfolio-details.html" class="tf-btn-readmore">
+                    <span class="plus">+</span>
+                    <span class="text">Read More</span>
+                  </a>
+                </div>
+              </div>
+              <a href="porfolio-details.html" class="image">
+                <img
+                  src="{% static 'image/project-item/project-item-1.jpg' %}"
+                  data-src="{% static 'image/project-item/project-item-1.jpg' %}"
+                  alt=""
+                  class="lazyload"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <span
+          class="swiper-notification"
+          aria-live="assertive"
+          aria-atomic="true"
+        ></span>
+      </div>
+      <div
+        class="sw-pagination-project sw-pagination mt-70 justify-content-center swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+      >
+        <span
+          class="swiper-pagination-bullet swiper-pagination-bullet-active"
+          tabindex="0"
+          role="button"
+          aria-label="Go to slide 1"
+          aria-current="true"
+        ></span
+        ><span
+          class="swiper-pagination-bullet"
+          tabindex="0"
+          role="button"
+          aria-label="Go to slide 2"
+        ></span
+        ><span
+          class="swiper-pagination-bullet"
+          tabindex="0"
+          role="button"
+          aria-label="Go to slide 3"
+        ></span
+        ><span
+          class="swiper-pagination-bullet"
+          tabindex="0"
+          role="button"
+          aria-label="Go to slide 4"
+        ></span>
+      </div>
+    </section>
+    {% comment %} {% endcomment %}
+    <div
+      class="wg-cta tf-spacing-4 alert alert-dismissible fade show"
+      role="alert"
+    >
+      <div class="tf-container">
+        <div class="cta-inner flex align-items-center">
+          <div class="left flex align-items-center">
+            <div class="icon">
+              <i class="icon-chat-2"></i>
+            </div>
+            <h5 class="fw-4 title">
+              Let’s <span class="fw-6">Discuss &amp; Start</span> IT
+              Consultations
+            </h5>
+            <a
+              href="#"
+              class="tf-btn no-bg text-underline hover-color-main-dark"
+            >
+              <span>Let’s Talk</span>
+              <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="right flex align-items-center g-15">
+            <div class="flex flex-wrap rg-15">
+              <div class="list-agent">
+                <a href="#" class="agent agent-1 style-border">
+                  <img
+                    src="{% static 'image/avatar/agent-4.jpg' %}"
+                    data-src="{% static 'image/avatar/agent-4.jpg' %}"
+                    alt=""
+                    class="ls-is-cached lazyloaded"
+                  />
+                </a>
+                <a href="#" class="agent agent-2 style-border">
+                  <img
+                    src="{% static 'image/avatar/agent-5.jpg' %}"
+                    data-src="{% static 'image/avatar/agent-5.jpg' %}"
+                    alt=""
+                    class="ls-is-cached lazyloaded"
+                  />
+                </a>
+                <a href="#" class="agent agent-3 style-border">
+                  <img
+                    src="{% static 'image/avatar/agent-6.jpg' %}"
+                    data-src="{% static 'image/avatar/agent-6.jpg' %}"
+                    alt=""
+                    class="ls-is-cached lazyloaded"
+                  />
+                </a>
+                <div class="agent agent-plus style-border">
+                  <span> + </span>
+                </div>
+              </div>
+              <div class="text">
+                <h5>1.5 Thousand+ <span class="fw-5">Trusted Clients</span></h5>
+                <div class="img-line">
+                  <img
+                    src="{% static 'image/icon/line-2.png' %}"
+                    data-src="{% static 'image/icon/line-2.png' %}"
+                    alt=""
+                    class="ls-is-cached lazyloaded"
+                  />
+                </div>
+              </div>
+            </div>
+            <a class="tf-btn-close" data-bs-dismiss="alert" aria-label="Close">
+              <i class="icon-close-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-form tf-spacing-4">
+      <div class="section-inner flex">
+        <!-- Left half (image + heading) -->
+        <div class="left">
+          <div class="image tf-animate-1">
+            <!-- static tag for image -->
+            <img
+              src="{% static 'image/section/img-section-form-1.jpg' %}"
+              alt="Work inquiry"
+              class="lazyload"
+            />
+          </div>
+
+          <div class="section-content section-form-content tf-animate-2">
+            <div class="sub-title body-2 fw-7 mb-17">Work Inquiry</div>
+            <h2 class="title fw-6">
+              Let’s Work For your<br />
+              Next Projects&nbsp;?
+            </h2>
+
+            <!-- internal contact page -->
+            <a
+              href="{% url 'contact' %}"
+              class="tf-btn style-bg-white hover-bg-main-dark"
+            >
+              <span>Contact Us</span>
+              <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right half (form) -->
+        <div class="right">
+          <form
+            id="contactform"
+            class="form-contact-us px-md-15"
+            method="post"
+            action="{% url 'contact' %}"
+            enctype="multipart/form-data"
+          >
+            {% csrf_token %}
+            <div class="heading-form text-center">
+              <h3 class="title">Need Help For Project!</h3>
+
+              <div class="desc lh-30">
+                We are ready to help your next projects, let’s work together
+              </div>
+            </div>
+
+            <div class="cols mb-20 g-20">
+              <fieldset class="item">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+                <i class="icon-user"></i>
+              </fieldset>
+
+              <fieldset class="item">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+                <i class="icon-email"></i>
+              </fieldset>
+            </div>
+
+            <select name="service" id="service-real" class="hidden">
+              <option value="">Choose Services</option>
+              <option value="ml">Machine Learning</option>
+              <option value="ai">Artificial Intelligence</option>
+              <option value="ar">Augmented Reality</option>
+              <option value="sd">Software Development</option>
+            </select>
+
+            <!-- 2. FANCY Nice‑Select UI (your existing markup unchanged) -->
+            <div id="service-ui" class="nice-select mb-20">
+              <span class="current caption-1">Choose Services</span>
+              <ul class="list">
+                <li class="option option-all selected focus" data-value="">
+                  Choose Services
+                </li>
+                <li class="option" data-value="ml">Machine Learning</li>
+                <li class="option" data-value="ai">Artificial Intelligence</li>
+                <li class="option" data-value="ar">Augmented Reality</li>
+                <li class="option" data-value="sd">Software Development</li>
+              </ul>
+            </div>
+
+            <fieldset class="mb-20">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </fieldset>
+
+            <button type="submit" class="tf-btn mx-auto">
+              <span>Send Message Us</span>
+              <i class="icon-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- /.main-content -->
+</div>
+{% endblock %}

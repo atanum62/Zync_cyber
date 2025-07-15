@@ -1,1 +1,563 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% load static %} {% block content %}
+<!-- Page-title -->
+
+<div class="page-title">
+  <div class="tf-container">
+    <div class="page-title-content text-center">
+      <h1 class="title ml-11 split-text effect-right">Blog Standard</h1>
+      <div class="breadkcum">
+        <a
+          href="{% url 'index' %}"
+          class="link-breadkcum body-2 fw-7 split-text effect-right"
+        >
+          Home
+        </a>
+        <span class="dot"></span>
+        <span class="page-breadkcum body-2 fw-7 split-text effect-right">
+          Blog Standard</span
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /.page-title -->
+<!-- Main-content -->
+
+<div class="main-content">
+  <div class="list-post-gird tf-spacing-2">
+    <div class="tf-container">
+      <div class="row rg-30">
+        <div class="col-xl-8">
+          <button id="filterShop" class="fillter-btn style-fixed d-xl-none">
+            <i class="icon-sidebar"></i>
+          </button>
+          <div class="tf-grid-2 loadmore-item">
+            <div class="fl-item" style="display: block">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-1.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-1.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Tips For Conducting to Usability Studies With
+                        Participants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="fl-item" style="display: block">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-5.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-5.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Online Environment Work For Older Users systems ways
+                        Tips Usability Studies Pants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="fl-item" style="display: block">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-2.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-2.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Tips For Conducting to Usability Studies With
+                        Participants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="fl-item" style="display: block">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-6.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-6.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Online Environment Work For Older Users systems ways
+                        Tips Usability Studies Pants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="fl-item" style="display: block">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-3.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-3.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Tips For Conducting to Usability Studies With
+                        Participants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="fl-item" style="display: block">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-7.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-7.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Online Environment Work For Older Users systems ways
+                        Tips Usability Studies Pants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="fl-item" style="display: block">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-4.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-4.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Tips For Conducting to Usability Studies With
+                        Participants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fl-item" style="display: block">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-8.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-8.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Online Environment Work For Older Users systems ways
+                        Tips Usability Studies Pants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fl-item">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-1.jpg' %}"
+                      data-rc="{% static 'image/blog/blog-grid-1.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Tips For Conducting to Usability Studies With
+                        Participants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fl-item">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-5.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-5.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Online Environment Work For Older Users systems ways
+                        Tips Usability Studies Pants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fl-item">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-2.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-2.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Tips For Conducting to Usability Studies With
+                        Participants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fl-item">
+              <div class="tf-post-grid hover-image">
+                <div class="top">
+                  <a href="blog-details.html" class="image">
+                    <img
+                      src="{% static 'image/blog/blog-grid-6.jpg' %}"
+                      data-src="{% static 'image/blog/blog-grid-6.jpg' %}"
+                      alt=""
+                      class="ls-is-cached lazyloaded"
+                    />
+                  </a>
+                  <div class="post-content px-md-15">
+                    <div class="category-post">
+                      <a href="#" class="item">Design</a>
+                      <a href="#" class="item">Figma</a>
+                    </div>
+                    <h6 class="title lh-32">
+                      <a href="blog-details.html" class="line-clamp-3">
+                        Online Environment Work For Older Users systems ways
+                        Tips Usability Studies Pants
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+
+                <div class="bottom-item px-md-15">
+                  <i class="icon-email"></i>
+                  <span>December 25, 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4">
+          <div class="tf-sidebar sidebar-filter right">
+            <div
+              class="header-fillter flex justify-content-between align-items-center d-xl-none mb-30"
+            >
+              <h3 class="title">Fillter</h3>
+              <span class="icon-close close-filter"></span>
+            </div>
+            <div class="sidebar-item sidebar-search">
+              <h5 class="title-content fw-5">Search</h5>
+
+              <form action="#" class="form-search-siderbar">
+                <fieldset>
+                  <input type="text" placeholder="Keywords" />
+                  <a href="#" class="tf-btn-search"
+                    ><i class="icon-magnifying-glass"></i
+                  ></a>
+                </fieldset>
+              </form>
+            </div>
+
+            <div class="sidebar-item sidebar-content sidebar-categories mb-40">
+              <h5 class="title-content fw-5">Category</h5>
+              <ul class="list">
+                <li class="item">
+                  <i class="icon-arrow-right"></i>
+                  <a href="#" class="body-2 fw-5">Web Design</a>
+                </li>
+                <li class="item">
+                  <i class="icon-arrow-right"></i>
+                  <a href="#" class="body-2 fw-5">Mobile Apps Design</a>
+                </li>
+                <li class="item">
+                  <i class="icon-arrow-right"></i>
+                  <a href="#" class="body-2 fw-5">Brand Identity Design</a>
+                </li>
+                <li class="item">
+                  <i class="icon-arrow-right"></i>
+                  <a href="#" class="body-2 fw-5">Motion Graphic Design</a>
+                </li>
+                <li class="item">
+                  <i class="icon-arrow-right"></i>
+                  <a href="#" class="body-2 fw-5">Web Development</a>
+                </li>
+                <li class="item">
+                  <i class="icon-arrow-right"></i>
+                  <a href="#" class="body-2 fw-5">Digital Marketing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sidebar-item sidebar-content sidebar-recent-posts">
+              <h4 class="title-content fw-5">Latest News</h4>
+              <div class="tf-post-list style-small hover-img">
+                <a href="blog-details.html" class="image">
+                  <img
+                    src="{% static 'image/blog/post-list-1.jpg' %}"
+                    data-src="{% static 'image/blog/post-list-1.jpg' %}"
+                    alt=""
+                    class="ls-is-cached lazyloaded"
+                  />
+                </a>
+                <div class="post-content px-md-15">
+                  <div class="post-date">
+                    <i class="icon-email"></i>
+                    <span>Dec 12, 2025</span>
+                  </div>
+                  <a href="#" class="body-2"> Tips For Conducting Studie </a>
+                </div>
+              </div>
+              <div class="tf-post-list style-small hover-img">
+                <a href="blog-details.html" class="image">
+                  <img
+                    src="{% static 'image/blog/post-list-2.jpg' %}"
+                    data-rc="{% static 'image/blog/post-list-2.jpg' %}"
+                    alt=""
+                    class="ls-is-cached lazyloaded"
+                  />
+                </a>
+                <div class="post-content px-md-15">
+                  <div class="post-date">
+                    <i class="icon-email"></i>
+                    <span>Dec 12, 2025</span>
+                  </div>
+                  <a href="#" class="body-2"> Usability With Participants </a>
+                </div>
+              </div>
+              <div class="tf-post-list style-small hover-img">
+                <a href="blog-details.html" class="image">
+                  <img
+                    src="{% static 'image/blog/post-list-3.jpg' %}"
+                    data-
+                    src="{% static 'image/blog/post-list-3.jpg' %}"
+                    alt=""
+                    class="ls-is-cached lazyloaded"
+                  />
+                </a>
+                <div class="post-content px-md-15">
+                  <div class="post-date">
+                    <i class="icon-email"></i>
+                    <span>Dec 12, 2025</span>
+                  </div>
+                  <a href="#" class="body-2"> Online Environment Work </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-item sidebar-tags mb-50">
+              <h4 class="title-content fw-5">Popular Tags</h4>
+              <div class="tabs-list">
+                <a href="#" class="tabs-item fw-5">Design </a>
+                <a href="#" class="tabs-item fw-5">Figma</a>
+                <a href="#" class="tabs-item fw-5">Apps</a>
+                <a href="#" class="tabs-item fw-5">Branding</a>
+                <a href="#" class="tabs-item fw-5">Development</a>
+                <a href="#" class="tabs-item fw-5">Digital</a>
+                <a href="#" class="tabs-item fw-5">Mobile Apps</a>
+              </div>
+            </div>
+
+            <div class="sidebar-banner box-item">
+              <div class="box-content px-sm-15">
+                <p class="sub-title">Get A Quote</p>
+                <h4 class="title">Looking For Creative Web Designer</h4>
+                <a href="#" class="tf-btn">
+                  <span>Hire Me</span>
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="bottom-btn text-center view-more-button">
+            <button class="tf-btn mx-auto btn-loadmore">
+              <span>View More News </span>
+              <i class="icon-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /.main-content -->
+
+{% endblock %}
