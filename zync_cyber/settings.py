@@ -125,6 +125,17 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+# ✉️ Email Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'atanumaity62899@gmail.com'  # 👈 your Gmail address
+EMAIL_HOST_PASSWORD = 'hoxa wbah ewpz errf'  # 👈 app password, not your normal Gmail password
+
+DEFAULT_FROM_EMAIL = 'atanumaity62899@gmail.com'
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

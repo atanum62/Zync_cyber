@@ -1,0 +1,9 @@
+Hi {{ name }},
+
+Thank you for contacting ZynCyber!
+
+We’ve received your message regarding "{{ service }}" and will get back to you as soon as possible.
+
+Best regards,  
+ZynCyber Support Team  
+https://zyncyber.in
