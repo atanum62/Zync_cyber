@@ -1,0 +1,74 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+*.sqlite
+
+# Django media/static (uncomment if you generate these)
+# media/
+# staticfiles/
+# static/
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Migrations (optional, if you want to ignore)
+# **/migrations/*.py
+# **/migrations/*.pyc
+
+# dotenv
+.env
+.env.*
+
+# Coverage/test reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.cache
+
+# Build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# mypy
+.mypy_cache/
+
+# pytest
+.pytest_cache/
+
+# pyproject
+poetry.lock
